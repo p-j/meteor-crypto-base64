@@ -1,8 +1,8 @@
 {
   "dependencies": [
     [
-      "jparker:meteor-crypto-base",
-      "3.1.2-1"
+      "jparker:crypto-core",
+      "3.1.2"
     ],
     [
       "meteor",

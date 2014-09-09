@@ -3,14 +3,14 @@ from [CryptoJS](https://code.google.com/p/crypto-js/).
 
 Dependency
 ----------
-- [jparker:meteor-crypto-base](https://github.com/p-j/meteor-crypto-base).
+- [`jparker:crypto-core`](https://github.com/p-j/meteor-crypto-core).
 
 Install
 -------
 
 Inside your project folder run
 ```
-$ meteor add jparker:meteor-crypto-base64
+$ meteor add jparker:crypto-base64
 ```
 The following methods under the `CryptoJS` namespace will now be available
 on **both the client and server**:
@@ -46,7 +46,7 @@ the documentation for encoders, including Base64, is at
 Related packages
 ----------------
 
-- [meteor-crypto-md5](https://github.com/p-j/meteor-crypto-md5)
-- [meteor-crypto-sha1](https://github.com/p-j/meteor-crypto-sha1)
-- [meteor-crypto-sha256](https://github.com/p-j/meteor-crypto-sha256)
-- [meteor-crypto-hmac](https://github.com/p-j/meteor-crypto-hmac)
+- [`jparker:crypto-md5`](https://github.com/p-j/meteor-crypto-md5)
+- [`jparker:crypto-sha1`](https://github.com/p-j/meteor-crypto-sha1)
+- [`jparker:crypto-sha256`](https://github.com/p-j/meteor-crypto-sha256)
+- [`jparker:crypto-hmac`](https://github.com/p-j/meteor-crypto-hmac)

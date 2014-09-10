@@ -1,18 +1,25 @@
 Package.describe({
 	summary: 'Base64 (en/de)coding for CryptoJS, standard secure crypto algorithms',
-	version: '3.1.2',
+	version: '0.1.0',
 	git: 'https://github.com/p-j/meteor-crypto-base64.git'
 });
 
-Package.on_use(function (api, where) {
-	api.versionsFrom('METEOR@0.9.0');
-	api.use('jparker:crypto-core@3.1.2', ['client', 'server']);
+Package.onUse(function (api, where) {
+	api.versionsFrom('METEOR@0.9.1.1');
+
+	api.use('jparker:crypto-core@0.1.0', ['client', 'server']);
+
 	api.imply('jparker:crypto-core', ['client', 'server']);
-	api.add_files('lib/enc-base64.js', ['client', 'server']);
+
+	api.addFiles('lib/enc-base64.js', ['client', 'server']);
 });
 
-Package.on_test(function (api) {
-	api.use(['jparker:crypto-core', 'jparker:crypto-base64', 'tinytest']);
+Package.onTest(function (api) {
+	api.use([
+    'jparker:crypto-core@0.1.0',
+    'jparker:crypto-base64@0.1.0',
+  	'tinytest'
+	], ['client', 'server']);
 
-	api.add_files('tests/tests.js', ['client', 'server']);
+	api.addFiles('tests/tests.js', ['client', 'server']);
 });

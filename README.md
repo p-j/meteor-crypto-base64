@@ -1,6 +1,8 @@
 [Base64](https://en.wikipedia.org/wiki/Base64) encoding and decoding
 from [CryptoJS](https://code.google.com/p/crypto-js/).
 
+[![Build Status](https://travis-ci.org/p-j/meteor-crypto-base64.svg)](https://travis-ci.org/p-j/meteor-crypto-base64)
+
 Dependency
 ----------
 - [`jparker:crypto-core`](https://github.com/p-j/meteor-crypto-core).
